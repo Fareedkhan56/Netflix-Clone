@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer {
+    background-image: url(./Assets/images/PK-en-20231113-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    height: 120vh;
+    /* width: 100%; */
+    background-size: max(1600px, 100vw);
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mainContainer .box {
+    position: absolute;
+    top: 0;
+    height: 120vh;
+    width: 100%;
+    opacity: 0.44;
+    background-color: #000;
+}
+
+.mainContainer nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #00000046;
+}
+
+.mainContainer nav img {
+    color: red;
+    position: relative;
+    z-index: 10;
+    margin: 2% 15%;
+}
+
+.mainContainer nav button {
+    margin: 2% 15%;
+    position: relative;
+    z-index: 10;
+    border-radius: 5px;
+    border: transparent;
+    color: white;
+    background-color: red;
+    font-size: 14px;
+    font-weight: 500;
+    width: 7vw;
+    height: 35px;
+    transition: all ease 1s;
+}
+
+.mainContainer nav button:hover {
+    background-color: rgb(186, 2, 2);
+    cursor: pointer;
+}
+
+.mainContent {
+    height: 90%;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.mainContent> :nth-child(1) {
+    font-size: 50px;
+    z-index: 10;
+}
+
+.mainContent> :nth-child(2) {
+    margin: 20px 0px 20px 0px;
+    font-size: 20px;
+    z-index: 10;
+}
+
+.mainContent> :nth-child(3) {
+    margin: 10px 0px 10px 0px;
+    font-size: 18px;
+    z-index: 10;
+}
+
+.emailSend {
+    width: 50%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emailSend input {
+    z-index: 10;
+    position: relative;
+    width: 350px;
+    height: 60px;
+    margin-right: 5px;
+    background-color: rgba(0, 0, 0, 0.728);
+    border: 1px solid rgba(249, 249, 249, 0.379);
+    border-radius: 5px;
+}
+
+.emailSend input::placeholder {
+    padding: 0px 10px;
+    font-size: 18px;
+}
+
+.emailSend button {
+    position: relative;
+    z-index: 10;
+    width: 150px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: red;
+    border: transparent;
+    color: white;
+    transition: all ease 1s;
+}
+
+.emailSend button:hover {
+    background-color: rgb(186, 2, 2);
+    cursor: pointer;
+}
+
+.sepration {
+    height: 7px;
+    background-color: rgb(84, 84, 84)
+}
+
+
+.tvSection {
+    font-family: 'Roboto', sans-serif;
+    background: #000;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tvSection .content {
+    color: white;
+    display: flex;
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tvSection .content .heading {
+    font-size: 50px;
+    font-weight: 900;
+    padding: 10px;
+    margin-bottom: 5%;
+}
+
+.tvSection .content .contentPara {
+    margin-left: 14%;
+    font-size: 20px;
+    width: 75%;
+    height: 50%;
+}
+
+.tv {
+    position: relative;
+}
+
+.tv video {
+    top: 20%;
+    right: 13%;
+    position: absolute;
+}
+
+.tv img {
+    position: relative;
+    z-index: 50;
+}
+
+.downloadSection {
+    font-family: 'Roboto', sans-serif;
+    background: #000;
+    height: 85vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0% 10%;
+}
+
+.downloadSection .image img {
+    width: 75%;
+}
+
+.downloadSection .content {
+    color: white;
+    display: flex;
+    width: 35%;
+    height: 50%;
+    flex-direction: column;
+}
+
+.downloadSection .content .heading {
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 5%;
+}
+
+.downloadSection .content .contentPara {
+    font-size: 20px;
+}
+
+.watchSection {
+    font-family: 'Roboto', sans-serif;
+    background: #000;
+    height: 85vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.watchSection .content {
+    margin-left: 17%;
+    width: 28%;
+}
+
+.watchSection .content .heading {
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 5%;
+}
+
+.watchSection .content .contentPara {
+    font-size: 22px;
+}
+
+.profileSection {
+    font-family: 'Roboto', sans-serif;
+    background: #000;
+    height: 85vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profileSection .image {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.profileSection img {
+    width: 80%;
+}
+
+.profileSection .content {
+    width: 35%;
+    margin-right: 10%;
+}
+
+.profileSection .content .heading {
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 5%;
+}
+
+.profileSection .content .contentPara {
+    font-size: 22px;
+}
+
+.faqSection {
+    font-family: 'Roboto', sans-serif;
+    background: #000;
+    height: 180vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.faqSection .heading {
+    font-size: 50px;
+    font-weight: 900;
+    margin-top: 5%;
+}
+
+.faqSection .boxes {
+    width: 90%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 50px 0px 50px 0px;
+}
+
+.faqSection .boxes .box {
+    width: 80%;
+    height: 4%;
+    background-color: #2d2d2d;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+}
+
+.faqSection .box svg {
+    filter: invert(1);
+}
+
+.faqSection .boxes .box:hover {
+    background-color: #4a4a4a;
+    transition: all 0.6s ease;
+    cursor: pointer;
+}
+
+.emailContent {
+    margin: 10px 0px -20px 0px;
+    font-size: 18px;
+}
+
+.footerSection{
+    font-family: 'Roboto', sans-serif;
+    background: #000;
+    height: 85vh;
+    color: rgb(161, 161, 161);
+}
+.footerSection .heading{
+    width: 26%;
+    height: 35%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    text-decoration: underline;
+}
+.footerSection .footerContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    justify-items: flex-start;
+    gap: 17px 10px;
+    margin: 2% 13%;
+}
+.footerSection .footerContent p a{
+    text-decoration: none;
+    color: rgb(161, 161, 161);
+    text-decoration: underline;
+    font-size: 14px;
+}
+.NetflixPak{
+    margin: 7% 0px 0px 13%;
+}
+.dev{
+    margin: 1% 0px 0px 13%;
+    animation: DevAni infinite 8s;
+    transition: all 1s ease;
+}
+
+@keyframes DevAni {
+    10%{
+        color: white;
+    }
+    20%{
+        color: grey;
+    }
+    30%{
+        color: aqua;
+    }
+    40%{
+        color: aquamarine;
+    }
+    50%{
+        color: red;
+    }
+    60%{
+        color: rgb(98, 1, 1);
+    }
+    70%{
+        color: yellow;
+    }
+    80%{
+        color: goldenrod;
+    }
+    90%{
+        color: whitesmoke;
+    }
+    100%{
+        color: rgb(240, 221, 221);
+    }
+}
+
+@media  screen and (max-width:980px) {
+    .mainContainer nav img{
+        width: 100px;
+        margin: 0px 40px;
+    }    
+    .mainContainer nav button{
+        margin: 2% 0%;
+    }
+}
